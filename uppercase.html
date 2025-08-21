@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chrset="UTF 8">
+        <title>upper case filter</title>
+    </head>
+    <body>
+        <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+        <h1>SITAMS</h1>
+        <div ng-app="DemoApp"ng-controller="DemoController">
+            TutorialName<input type="text" ng-model="tutorialName"><br>
+            <br>
+            This tutorial is{{tutorialname | Uppercase}}  
+        </div>
+        <script type="text/javascript">
+            var app=angular.module('DemoApp',[]);
+            app.controller('Democontroller',function($scope){
+                $scope.tutorialName="angularjs";
+            });
+        </script>
+    </body>
+</html>
